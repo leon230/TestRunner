@@ -4,12 +4,11 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner1 {
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(TestJunit1.class);
+        CaseInsensitiveString s = new CaseInsensitiveString("String");
+        String ss = "string";
+        s.getStringa(s);
 
-        for (Failure failure : result.getFailures()) {
-            System.out.println(failure.toString());
-        }
 
-        System.out.println(result.wasSuccessful());
+
     }
 }  
